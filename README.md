@@ -64,8 +64,6 @@ Please see the compose file [here](docker-compose.yml).
 | `PUID`        | Optional: host user ID for file ownership  | `1026`               |
 | `PGID`        | Optional: host group ID for file ownership | `100`                |
 
-If you need different ownership on `./config`, set `PUID`/`PGID` to your host user/group (e.g., run `id` on Linux/macOS to see values). Otherwise, you can keep the defaults as-is.
-
 ---
 
 ## Notes on compose versions and commands
