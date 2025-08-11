@@ -3,6 +3,10 @@
 This repository provides a minimal Docker Compose setup for running [Remmina](https://remmina.org/) using the [LinuxServer.io Remmina image](https://docs.linuxserver.io/images/docker-remmina/). It maps a local `./config` folder for persistent settings and exposes a web UI on port `3144`.
 
 ---
+## Compose file
+
+Please see the compose file [here](docker-compose.yml).
+---
 
 ## Quick start
 
@@ -39,10 +43,6 @@ http://localhost:3144
 ```
 
 ---
-
-## Compose file
-
-Please see the compose file [here](docker-compose.yml).
 
 ## Configuration
 
