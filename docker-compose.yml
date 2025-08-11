@@ -1,1 +1,20 @@
-
+version: "3.9" #can be omitted for newer versions
+services:
+  remmina:
+    container_name: Remmina
+    image: ghcr.io/linuxserver/remmina
+    mem_limit: 4g
+    cpu_shares: 768
+    security_opt:
+      - no-new-privileges:false
+    restart: on-failure:5
+    ports:
+      - 3144:3000 #port 3144 on the container perimeter
+    volumes:
+      - ./config:/config:rw
+    environment:
+     CUSTOM_USER: usernamehere #change to desired username
+     PASSWORD: passwordhere #change to desired password
+     TZ: America/Los_Angeles #change to desired TZ
+     PUID: 1026
+     PGID: 100
