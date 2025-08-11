@@ -40,7 +40,7 @@ http://localhost:3144
 
 ---
 
-## Compose file (reference)
+## Compose file
 
 Please see the compose file [here](docker-compose.yml).
 
